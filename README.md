@@ -1,4 +1,4 @@
-# BERRIE-S
+# BERRIE'S
 
 Project for a university course: Web Development, 2018.
 
