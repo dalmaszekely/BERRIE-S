@@ -1,0 +1,1043 @@
+<!DOCTYPE HTML>
+<HTML lang="en">
+<head>
+	<title>Berrie's Garden Centre</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="Berriestyles.css">
+	<script src="Berriesjavascript.js"></script>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--social media ikonok-->
+	<link href="https://cdn.jsdelivr.net/css-toggle-switch/latest/toggle-switch.css" rel="stylesheet" /> <!--csuszkához-->
+	
+	<link rel="shortcut icon" type="image/png" href="logok/favicon.png"/> <!--faviconhoz-->
+</head>
+<body>
+		
+	<div class="topbg-img"><br><br><br><br><br><br><br><br><br><br><br></div>
+	
+	<div id="topnav" class="topnav1">
+		<div>
+			<a href="about.html" class="tophovernav">About Us</a>
+			<a href="our_plants.html" class="tophovernav active">Our Plants</a>
+			<a href="tryme.html" class="tophovernav">Try Me</a>
+			<a href="garden_tips.html" class="tophovernav">Garden Tips</a>
+			<a href="gallery.html" class="tophovernav">Gallery</a>
+			<a href="contact_us.html" class="tophovernav">Contact Us</a>
+			
+			<a href="javascript:void(0);" class="icon" onclick="menuFunction()">
+			<i class="fa fa-bars"></i></a>
+		</div>
+	</div>
+	
+	<section class="bg-img-our_plants">
+	<h1>Our Plants</h1>
+	</section>
+	
+	<div class="black">
+		<br>	
+	</div>
+	
+	<button class="search" onClick="search()">Search by plant's needs</button>
+	<div id="search_buttons" class="search_buttons">
+	<div class="row">
+		<div class="col-3 col-t-6">
+			<p class="search_labels">Water</p>
+			<div class="switch-toggle switch-3 switch-candy">
+				<input id="low1" name="water" type="radio" checked="" />
+				<label for="low1">low</label>
+				<input id="medium1" name="water" type="radio" checked /><label for="medium1">medium</label>
+				<input id="high1" name="water" type="radio" />
+				<label for="high1">high</label>
+				
+				<a></a>
+			</div>
+		</div>
+		<div class="col-3 col-t-6">
+			<p class="search_labels">Light</p>
+			<div class="switch-toggle switch-3 switch-candy">
+				<input id="low2" name="light" type="radio" checked="" />
+				<label for="low2">low</label>
+				<input id="medium2" name="light" type="radio" checked /><label for="medium2">medium</label>
+				<input id="high2" name="light" type="radio" />
+				<label for="high2">high</label>
+				
+				<a></a>
+			</div>
+		</div>
+		<div class="col-3 col-t-6">
+			<p class="search_labels">Warmth</p>
+			<div class="switch-toggle switch-3 switch-candy">
+				<input id="low3" name="warmth" type="radio" checked="" />
+				<label for="low3">low</label>
+				<input id="medium3" name="warmth" type="radio" checked /><label for="medium3">medium</label>
+				<input id="high3" name="warmth" type="radio" />
+				<label for="high3">high</label>
+				
+				<a></a>
+			</div>
+		</div>
+		<div class="col-3 col-t-6">
+			<p class="search_labels">Humidity</p>
+			<div class="switch-toggle switch-3 switch-candy">
+				<input id="low4" name="humidity" type="radio" checked="" />
+				<label for="low4">low</label>
+				<input id="medium4" name="humidity" type="radio" checked /><label for="medium4">medium</label>
+				<input id="high4" name="humidity" type="radio" />
+				<label for="high4">high</label>
+				
+				<a></a>
+			</div>
+		</div>
+	</div>
+	<div id="ok">
+	<button id="okButton" onClick="searchBy()">
+		FIND ME
+	</button>
+	</div>
+	</div>
+	
+	<div class="black">
+		<br>	
+	</div>
+	
+	<button class="categories" onClick="categories()">Categories</button>
+	<div id="categories_buttons" class="categories_buttons">
+	<div class="row">
+		<div class="col-3 col-t-6">
+			<button class="categories_labels" onClick="searchIndoor()">Indoor Plants</button>
+			
+		</div>
+		<div class="col-3 col-t-6">
+			<button class="categories_labels" onClick="searchOutdoor()">Outdoor Plants</button>
+		</div>
+		<div class="col-3 col-t-6">
+			<button class="categories_labels" onClick="searchBalcony()">Balcony and Annual Plants</button>
+			
+		</div>
+		<div class="col-3 col-t-6">
+			<button class="categories_labels" onClick="searchMedi()">Mediterranean Ornamental Plants</button>
+			
+		</div>
+	</div>
+	</div>
+	
+	<div class="black">
+		<br>	
+	</div>
+	
+	<div id="plants" class="plants">
+	<div class="row">
+	
+	<!--LOTUS-->
+		<div class="col-3 col-t-6 flower 1111 2222 3333 1312 1112 1113 outdoor medi">
+		<div class="container">
+			<img src="flowers/lotus.jpeg" alt="Lotus" class="plant_buttons" onClick="openLotus()">
+			<div class="dark" onClick="openLotus()">
+				<p class="flower_name">Lotus</p>
+			</div>
+		</div>
+		</div>
+		
+		<div id="lotus" class="overlay">
+		  <a href="javascript:void(0)" class="closebtn" onClick="closeLotus()">&times;</a>
+		  <div class="overlay-content">
+			<p class="plant_name">Lotus</p>
+			<p class="info_plant">
+			&emsp;Nelumbo nucifera, also known as Indian lotus, sacred lotus, bean of India, Egyptian bean or simply lotus, is one of two extant species of aquatic plant in the family Nelumbonaceae. It is often colloquially called a water lily. Under favorable circumstances the seeds of this aquatic perennial may remain viable for many years, with the oldest recorded lotus germination being from that of seeds 1,300 years old recovered from a dry lakebed in northeastern China.</p>
+			<hr>
+			<div class="data">
+			<p>Height: 150 cm</p>
+			<p>Width: 3 m</p>
+			<p>Flower's colour: Pink</p>
+			<p>Flowering time: June -- September</p>
+			</div>
+			<hr>
+			<div class="needs">
+			<p>Water needs: low</p>
+			<p>Light needs: high</p>
+			<p>Warmth needs: low</p>
+			<p>Humidity needs: medium</p>
+			</div>
+		  </div>
+		</div>
+		
+	<!--PEONY-->
+		<div class="col-3 col-t-6 flower 1312 3222 2222 1231 2311 2312 2313 1221 1222 outdoor balcony medi">
+		<div class="container">
+			<img src="flowers/peony.jpeg" alt="Peony" class="plant_buttons" onClick="openPeony()">	
+			<div class="dark" onClick="openPeony()">
+				<p class="flower_name">Peony</p>
+			</div>
+		</div>
+		</div>
+		
+		<div id="peony" class="overlay">
+		  <a href="javascript:void(0)" class="closebtn" onClick="closePeony()">&times;</a>
+		  <div class="overlay-content">
+			<p class="plant_name">Peony</p>
+			<p class="info_plant">
+			&emsp;The peony or paeony is a flowering plant in the genus Paeonia, the only genus in the family Paeoniaceae. They are native to Asia, Europe and Western North America. Scientists differ on the number of species that can be distinguished ranging from 25 to 40, although the current consensus is 33 known species. The relationships between the species need to be further clarified.</p>
+			<hr>
+			<div class="data">
+			<p>Height: 1 - 3 m</p>
+			<p>Width: 1 m</p>
+			<p>Flower's colour: Orange, Pink, Red, White, Yellow</p>
+			<p>Flowering time: April -- June</p>
+			</div>
+			<hr>
+			<div class="needs">
+			<p>Water needs: low</p>
+			<p>Light needs: high</p>
+			<p>Warmth needs: low</p>
+			<p>Humidity needs: medium</p>
+			</div>
+		  </div>
+		</div>
+		
+		<!--ROSE-->
+		<div class="col-3 col-t-6 flower 1312 1121 1122 1123 3122 3123 3131 outdoor balcony medi">
+		<div class="container">
+			<img src="flowers/rose.JPG" alt="Rose" class="plant_buttons" onClick="openRose()">
+			<div class="dark" onClick="openRose()">
+				<p class="flower_name">Rose</p>
+			</div>
+		</div>
+		</div>
+		
+		<div id="rose" class="overlay">
+		  <a href="javascript:void(0)" class="closebtn" onClick="closeRose()">&times;</a>
+		  <div class="overlay-content">
+			<p class="plant_name">Rose</p>
+			<p class="info_plant">
+			&emsp;A rose is a woody perennial flowering plant of the genus Rosa, in the family Rosaceae, or the flower it bears. There are over three hundred species and thousands of cultivars. They form a group of plants that can be erect shrubs, climbing or trailing with stems that are often armed with sharp prickles. Flowers vary in size and shape and are usually large and showy, in colours ranging from white through yellows and reds.<br>
+			&emsp;Most species are native to Asia, with smaller numbers native to Europe, North America, and northwestern Africa. Species, cultivars and hybrids are all widely grown for their beauty and often are fragrant. Roses have acquired cultural significance in many societies. Rose plants range in size from compact, miniature roses, to climbers that can reach seven meters in height. Different species hybridize easily, and this has been used in the development of the wide range of garden roses.</p>
+			<hr>
+			<div class="data">
+			<p>Height: 0.5 m</p>
+			<p>Width: 0.5 m</p>
+			<p>Flower's colour: Red, Pink, Peach, Orange, Salmon, Yellow, White, Purple, Burgundy, Green, Black</p>
+			<p>Flowering time: May -- September</p>
+			</div>
+			<hr>
+			<div class="needs">
+			<p>Water needs: low</p>
+			<p>Light needs: high</p>
+			<p>Warmth needs: low</p>
+			<p>Humidity needs: medium</p>
+			</div>
+		  </div>
+		</div>
+		
+	<!--PLUMERIA-->
+	
+	<div class="col-3 col-t-6 flower 1313 1232 1233 1311 1223 1131 1132 1123 balcony outdoor">
+		<div class="container">
+			<img src="flowers/plumeria.jpeg" alt="Plumeria" class="plant_buttons" onClick="openPlumeria()">
+			<div class="dark" onClick="openPlumeria()">
+				<p class="flower_name">Plumeria</p>
+			</div>
+		</div>		
+		</div>		
+		
+		<div id="plumeria" class="overlay">
+		  <a href="javascript:void(0)" class="closebtn" onClick="closePlumeria()">&times;</a>
+		  <div class="overlay-content">
+			<p class="plant_name">Plumeria</p>
+			<p class="info_plant">
+			&emsp;Plumeria (/pluːˈmɛriə/) is a genus of flowering plants in the dogbane family, Apocynaceae. Most species are deciduous shrubs or small trees. The species variously are indigenous to Mexico, Central America, Hawaii and the Caribbean, and as far south as Brazil, but are grown as cosmopolitan ornamentals in warm regions. Common names for plants in the genus vary widely according to region, variety, and whim, but Frangipani or variations on that theme are the most common. Plumeria also is used directly as a common name, especially in horticultural circles.</p>
+			<hr>
+			<div class="data">
+			<p>Height: 2 - 10 m</p>
+			<p>Width: 2 - 10 m</p>
+			<p>Flower's colour: White, Orange, Salmon, Pink, Red, Rainbow, Purple</p>
+			<p>Flowering time: June -- August</p>
+			</div>
+			<hr>
+			<div class="needs">
+			<p>Water needs: low</p>
+			<p>Light needs: high</p>
+			<p>Warmth needs: low</p>
+			<p>Humidity needs: high</p>
+			</div>
+		  </div>
+		</div>
+	
+		
+	
+		
+	<!--HYDRANGEA-->
+	
+	<div class="col-3 col-t-6 flower 1333 2111 2112 2113 1231 2121 1122 1112 outdoor medi">
+		<div class="container">
+			<img src="flowers/hydrangea.jpeg" alt="Hydrangea" class="plant_buttons" onClick="openHydrangea()">
+			<div class="dark" onClick="openHydrangea()">
+				<p class="flower_name">Hydrangea</p>
+			</div>
+		</div>		
+		</div>		
+		
+		<div id="hydrangea" class="overlay">
+		  <a href="javascript:void(0)" class="closebtn" onClick="closeHydrangea()">&times;</a>
+		  <div class="overlay-content">
+			<p class="plant_name">Hydrangea</p>
+			<p class="info_plant">
+			&emsp;Hydrangea (/haɪˈdreɪndʒiə/; common names hydrangea or hortensia) is a genus of 70–75 species of flowering plants native to southern and eastern Asia (China, Japan, Taiwan, Korea, the Himalayas, and Indonesia) and the Americas. By far the greatest species diversity is in eastern Asia, notably China, Japan, and Korea. Most are shrubs 1 to 3 meters tall, but some are small trees, and others lianas reaching up to 30 m (98 ft) by climbing up trees. They can be either deciduous or evergreen, though the widely cultivated temperate species are all deciduous.
+			<br>
+			&emsp;Having been introduced to the Azores, H. macrophylla is now very common, particularly on Faial, which is known as the "blue island" due to the vast number of hydrangeas present on the island.
+			<br>
+			&emsp;‘Hydrangea’ is derived from Greek and means ‘water vessel’, which is in reference to the shape of its seed capsules.[3]</p>
+			<hr>
+			<div class="data">
+			<p>Height: 1 - 6 m</p>
+			<p>Width: 1 - 4 m</p>
+			<p>Flower's colour: Blue, Green, Pink, Purple, Red, White</p>
+			<p>Flowering time: July -- September</p>
+			</div>
+			<hr>
+			<div class="needs">
+			<p>Water needs: low</p>
+			<p>Light needs: high</p>
+			<p>Warmth needs: high</p>
+			<p>Humidity needs: high</p>
+			</div>
+		  </div>
+		</div>
+		
+	<!--TULIP-->
+	
+	<div class="col-3 col-t-6 flower 3221 3223 3231 3232 3233 2322 2323 2331 outdoor balcony medi">
+		<div class="container">
+			<img src="flowers/tulip.jpg" alt="Tulip" class="plant_buttons" onClick="openTulip()">
+			<div class="dark" onClick="openTulip()">
+				<p class="flower_name">Tulip</p>
+			</div>
+		</div>		
+		</div>		
+		
+		<div id="tulip" class="overlay">
+		  <a href="javascript:void(0)" class="closebtn" onClick="closeTulip()">&times;</a>
+		  <div class="overlay-content">
+			<p class="plant_name">Tulip</p>
+			<p class="info_plant">
+			&emsp;Tulips (Tulipa) form a genus of spring-blooming perennial herbaceous bulbiferous geophytes (having bulbs as storage organs). The flowers are usually large, showy and brightly coloured, generally red, pink, yellow, or white (usually in warm colours). They often have a different coloured blotch at the base of the tepals (petals and sepals, collectively), internally. Because of a degree of variability within the populations, and a long history of cultivation, classification has been complex and controversial. The tulip is a member of the Liliaceae (lily) family, along with 14 other genera, where it is most closely related to Amana, Erythronium and Gagea in the tribe Lilieae. There are about 75 species, and these are divided among four subgenera. The name "tulip" is thought to be derived from a Persian word for turban, which it may have been thought to resemble. Tulips originally were found in a band stretching from Southern Europe to Central Asia, but since the seventeenth century have become widely naturalised and cultivated (see map). In their natural state they are adapted to steppes and mountainous areas with temperate climates. Flowering in the spring, they become dormant in the summer once the flowers and leaves die back, emerging above ground as a shoot from the underground bulb in early spring.
+			<br>
+			&emsp;While tulips had probably been cultivated in Asia from the tenth century, they did not come to the attention of the West until the sixteenth century, when Western diplomats to the Ottoman court observed and reported on them. They were rapidly introduced into Europe and became a frenzied commodity during Tulip mania. Tulips were frequently depicted in Dutch Golden Age paintings, and have become associated with the Netherlands, the major producer for world markets, ever since. In the seventeenth century Netherlands, during the time of the Tulip mania, an infection of tulip bulbs by the tulip breaking virus created variegated patterns in the tulip flowers that were much admired and valued. This phenomenon was referred to as "broken".
+			<br>
+			&emsp;Breeding programs have produced thousands of hybrid and cultivars in addition to the original species (known in horticulture as botanical tulips). They are popular throughout the world, both as ornamental garden plants and as cut flowers.</p>
+			<hr>
+			<div class="data">
+			<p>Height: 0.2 - 0.4 m</p>
+			<p>Width: 0.2 - 0.4 m</p>
+			<p>Flower's colour: White, Orange, Pink, Red, Purple, Black, Mixed</p>
+			<p>Flowering time: March -- May</p>
+			</div>
+			<hr>
+			<div class="needs">
+			<p>Water needs: high</p>
+			<p>Light needs: medium</p>
+			<p>Warmth needs: medium</p>
+			<p>Humidity needs: low</p>
+			</div>
+		  </div>
+		</div>
+		
+	
+		
+	<!--FERN-->
+	
+	<div class="col-3 col-t-6 flower 3112 3113 3121 3122 3123 3131 3132 3333 outdoor">
+		<div class="container">
+			<img src="flowers/fern.jpg" alt="Fern" class="plant_buttons" onClick="openFern()">
+			<div class="dark" onClick="openFern()">
+				<p class="flower_name">Fern</p>
+			</div>
+		</div>		
+		</div>		
+		
+		<div id="fern" class="overlay">
+		  <a href="javascript:void(0)" class="closebtn" onClick="closeFern()">&times;</a>
+		  <div class="overlay-content">
+			<p class="plant_name">Fern</p>
+			<p class="info_plant">
+			&emsp;A fern is a member of a group of vascular plants (plants with xylem and phloem) that reproduce via spores and have neither seeds nor flowers. They differ from mosses by being vascular, i.e., having specialized tissues that conduct water and nutrients, in having branched stems and in having life cycles in which the sporophyte is the dominant phase. Like other vascular plants, ferns have complex leaves called megaphylls, that are more complex than the microphylls of clubmosses. Most ferns are leptosporangiate ferns, sometimes referred to as true ferns. They produce coiled fiddleheads that uncoil and expand into fronds. The group includes about 10,560 known extant species.
+			<br>
+			&emsp;Ferns are defined here in the broad sense, being all of the Polypodiopsida, comprising both the leptosporangiate (Polypodiidae) and eusporangiate ferns, the latter itself comprising ferns other than those denominated true ferns, including horsetails or scouring rushes, whisk ferns, marattioid ferns, and ophioglossoid ferns.</p>
+			<hr>
+			<div class="data">
+			<p>Height: 1 m</p>
+			<p>Width: 0.5 - 1.5 m</p>
+			<p>Flower's colour: Not the flowering type</p>
+			<p>Flowering time: Still not</p>
+			</div>
+			<hr>
+			<div class="needs">
+			<p>Water needs: high</p>
+			<p>Light needs: low</p>
+			<p>Warmth needs: low</p>
+			<p>Humidity needs: medium</p>
+			</div>
+		  </div>
+		</div>
+		
+	<!--LAVENDER-->
+	
+	<div class="col-3 col-t-6 flower 2312 2313 2321 2322 2323 3133 3211 3212 3213 balcony outdoor">
+		<div class="container">
+			<img src="flowers/lavender.jpg" alt="Lavender" class="plant_buttons" onClick="openLavender()">
+			<div class="dark" onClick="openLavender()">
+				<p class="flower_name">Lavender</p>
+			</div>
+		</div>		
+		</div>		
+		
+		<div id="lavender" class="overlay">
+		  <a href="javascript:void(0)" class="closebtn" onClick="closeLavender()">&times;</a>
+		  <div class="overlay-content">
+			<p class="plant_name">Lavender</p>
+			<p class="info_plant">
+			&emsp;Lavandula (common name lavender) is a genus of 47 known species of flowering plants in the mint family, Lamiaceae. It is native to the Old World and is found from Cape Verde and the Canary Islands, Europe across to northern and eastern Africa, the Mediterranean, southwest Asia, China (Plectranthus mona lavender) to southeast India. Many members of the genus are cultivated extensively in temperate climates as ornamental plants for garden and landscape use, for use as culinary herbs, and also commercially for the extraction of essential oils. The most widely cultivated species, Lavandula angustifolia, is often referred to as lavender, and there is a color named for the shade of the flowers of this species.</p>
+			<hr>
+			<div class="data">
+			<p>Height: 0.5 m</p>
+			<p>Width: 0.5 m</p>
+			<p>Flower's colour: Purple</p>
+			<p>Flowering time: June -- July</p>
+			</div>
+			<hr>
+			<div class="needs">
+			<p>Water needs: medium </p>
+			<p>Light needs: high</p>
+			<p>Warmth needs: low</p>
+			<p>Humidity needs: medium</p>
+			</div>
+		  </div>
+		</div>
+		
+	
+		
+	<!--GAZANIA-->
+	
+	<div class="col-3 col-t-6 flower 2112 2333 3111 1222 1213 1221 1222 1223 1231 1232 balcony medi">
+		<div class="container">
+			<img src="flowers/gazania.jpeg" alt="Gazania" class="plant_buttons" onClick="openGazania()">
+			<div class="dark" onClick="openGazania()">
+				<p class="flower_name">Gazania</p>
+			</div>
+		</div>		
+		</div>		
+		
+		<div id="gazania" class="overlay">
+		  <a href="javascript:void(0)" class="closebtn" onClick="closeGazania()">&times;</a>
+		  <div class="overlay-content">
+			<p class="plant_name">Gazania</p>
+			<p class="info_plant">
+			&emsp;Gazania /ɡəˈzeɪniə/ is a genus of flowering plants in the family Asteraceae, native to Southern Africa.
+			<br>
+			&emsp;They produce large, daisy-like composite flowerheads in brilliant shades of yellow and orange, over a long period in summer. They are often planted as drought-tolerant groundcover.</p>
+			<hr>
+			<div class="data">
+			<p>Height: 0.5 m</p>
+			<p>Width: 0.5 m</p>
+			<p>Flower's colour: Purple</p>
+			<p>Flowering time: June -- July</p>
+			</div>
+			<hr>
+			<div class="needs">
+			<p>Water needs: medium</p>
+			<p>Light needs: low</p>
+			<p>Warmth needs: low</p>
+			<p>Humidity needs: medium</p>
+			</div>
+		  </div>
+		</div>
+		
+	<!--CACTUS-->
+	
+	<div class="col-3 col-t-6 flower 3332 3331 3323 3322 3321 1232 1233 1311 1313 outdoor indoor">
+		<div class="container">
+			<img src="flowers/cactus.jpeg" alt="Cactus" class="plant_buttons" onClick="openCactus()">
+			<div class="dark" onClick="openCactus()">
+				<p class="flower_name">Cactus</p>
+			</div>
+		</div>		
+		</div>		
+		
+		<div id="cactus" class="overlay">
+		  <a href="javascript:void(0)" class="closebtn" onClick="closeCactus()">&times;</a>
+		  <div class="overlay-content">
+			<p class="plant_name">Cactus</p>
+			<p class="info_plant">
+			&emsp;A cactus is a kind of a plant adapted to hot, dry climates. Plants which live this kind of life-style are called xerophytes. Most are succulents, which store water.
+			<br>
+			&emsp;Cacti are members of the plant family Cactaceae, in the order Caryophyllales. There are about 127 genera, with over 1750 known species. Almost all of them are native to the Americas, from Patagonia in the south to parts of western Canada in the north. The species Rhipsalis baccifera also grows in Africa and Sri Lanka.
+			<br>
+			&emsp;Theophrastus was the first to use the word cactus: It comes from Ancient Greek κάκτος, kaktos. Theophrastus used it for a spiny plant whose identity is not known for sure. Cacti are part of an important food chain in dry, hot climates. Now cacti have spread to many other parts of the world, and many people like to grow them in pots or gardens.
+			<br>
+			&emsp;Many cacti live in dry places, such as deserts. Most cacti have sharp thorns (stickers) and thick skin. There are many shapes and sizes of cacti. Some are short and round; others are tall and thin. Many cactus flowers are big and beautiful. Some bloom at night and are pollinated by moths and bats. Some cactus fruits are brightly coloured and good to eat: many animals eat cactus fruits.</p>
+			<hr>
+			<div class="data">
+			<p>Height: 0.1 - 0.5 m</p>
+			<p>Width: 0.1 - 0.5 m</p>
+			<p>Flower's colour: Pink, Yellow, Orange, White</p>
+			<p>Flowering time: Depends on type</p>
+			</div>
+			<hr>
+			<div class="needs">
+			<p>Water needs: high</p>
+			<p>Light needs: high</p>
+			<p>Warmth needs: high</p>
+			<p>Humidity needs: medium</p>
+			</div>
+		  </div>
+		</div>
+		
+		
+	<!--SNOWDROP-->
+	
+	<div class="col-3 col-t-6 flower 1111 1112 1113 1121 2232 2233 2213 2321 outdoor">
+		<div class="container">
+			<img src="flowers/snowdrop.jpeg" alt="Snowdrop" class="plant_buttons" onClick="openSnowdrop()">
+			<div class="dark" onClick="openSnowdrop()">
+				<p class="flower_name">Snowdrop</p>
+			</div>
+		</div>		
+		</div>		
+		
+		<div id="snowdrop" class="overlay">
+		  <a href="javascript:void(0)" class="closebtn" onClick="closeSnowdrop()">&times;</a>
+		  <div class="overlay-content">
+			<p class="plant_name">Snowdrop</p>
+			<p class="info_plant">
+			&emsp;Galanthus (snowdrop; Greek gála "milk", ánthos "flower") is a small genus of about 20 species of bulbous perennial herbaceous plants in the family Amaryllidaceae. The plants have two linear leaves and a single small white drooping bell shaped flower with six petal-like (petaloid) tepals in two circles (whorls). The smaller inner petals have green markings.
+			<br>
+			&emsp;Snowdrops have been known since the earliest times under various names but were named Galanthus in 1753. As the number of recognised species increased various attempts were made to divide the species into subgroups, usually on the basis of the pattern of the emerging leaves (vernation). In the era of molecular phylogenetics this characteristic has been shown to be unreliable and now seven moleculary defined clades are recognised corresponding to the biogeographical distribution of species. New species continue to be discovered.
+			<br>
+			&emsp;Most species flower in winter, before the vernal equinox (20 or 21 March in the Northern Hemisphere), but some flower in early spring and late autumn. Snowdrops are sometimes confused with the two related genera within the tribe Galantheae, snowflakes Leucojum and Acis.</p>
+			<hr>
+			<div class="data">
+			<p>Height: 0.2 m</p>
+			<p>Width: 0.2 m</p>
+			<p>Flower's colour: White with a bit of Green</p>
+			<p>Flowering time: February -- March</p>
+			</div>
+			<hr>
+			<div class="needs">
+			<p>Water needs: low</p>
+			<p>Light needs: low</p>
+			<p>Warmth needs: low</p>
+			<p>Humidity needs: low</p>
+			</div>
+		  </div>
+		</div>
+		
+	<!--IRIS-->
+	
+	<div class="col-3 col-t-6 flower 3231 3211 3133 3132 3131 2332 2333 1213 balcony">
+		<div class="container">
+			<img src="flowers/iris.jpg" alt="iris" class="plant_buttons" onClick="openIris()">
+			<div class="dark" onClick="openIris()">
+				<p class="flower_name">Iris</p>
+			</div>
+		</div>		
+	</div>		
+		
+		<div id="iris" class="overlay">
+		  <a href="javascript:void(0)" class="closebtn" onClick="closeIris()">&times;</a>
+		  <div class="overlay-content">
+			<p class="plant_name">Iris</p>
+			<p class="info_plant">
+			&emsp;Iris is a genus of 260–300 species of flowering plants with showy flowers. It takes its name from the Greek word for a rainbow, which is also the name for the Greek goddess of the rainbow, Iris. Some authors state that the name refers to the wide variety of flower colors found among the many species. As well as being the scientific name, iris is also widely used as a common name for all Iris species, as well as some belonging to other closely related genera. A common name for some species is 'flags', while the plants of the subgenus Scorpiris are widely known as 'junos', particularly in horticulture. It is a popular garden flower.
+			<br>
+			&emsp;The often-segregated, monotypic genera Belamcanda (blackberry lily, I. domestica), Hermodactylus (snake's head iris, I. tuberosa), and Pardanthopsis (vesper iris, I. dichotoma) are currently included in Iris.
+			<br>
+			&emsp;Three Iris varieties are used in the Iris flower data set outlined by Ronald Fisher in his 1936 paper The use of multiple measurements in taxonomic problems as an example of linear discriminant analysis.</p>
+			<hr>
+			<div class="data">
+			<p>Height: 0.4 - 0.8 m</p>
+			<p>Width: 0.4 - 0.8 m</p>
+			<p>Flower's colour: White, Yellow, Orange, Red, Pink, Purple, Blue, Brown, Black</p>
+			<p>Flowering time: June -- August</p>
+			</div>
+			<hr>
+			<div class="needs">
+			<p>Water needs: high</p>
+			<p>Light needs: medium</p>
+			<p>Warmth needs: high</p>
+			<p>Humidity needs: low</p>
+			</div>
+		  </div>
+		</div>
+		
+	
+	
+	<!--MAGNOLIA-->
+	
+	<div class="col-3 col-t-6 2222 3112 3113 3121 3122 3123 1111 1113 1121 1122 flower medi outdoor">
+		<div class="container">
+			<img src="flowers/magnolia.jpeg" alt="Magnolia" class="plant_buttons" onClick="openMagnolia()">
+			<div class="dark" onClick="openMagnolia()">
+				<p class="flower_name">Magnolia</p>
+			</div>
+		</div>		
+	</div>		
+		
+		<div id="magnolia" class="overlay">
+		  <a href="javascript:void(0)" class="closebtn" onClick="closeMagnolia()">&times;</a>
+		  <div class="overlay-content">
+			<p class="plant_name">Magnolia</p>
+			<p class="info_plant">
+			&emsp;Magnolia is a large genus of about 210 flowering plant species in the subfamily Magnolioideae of the family Magnoliaceae. It is named after French botanist Pierre Magnol.
+			<br>
+			&emsp;Magnolia is an ancient genus. Appearing before bees did, the flowers are theorized to have evolved to encourage pollination by beetles. To avoid damage from pollinating beetles, the carpels of Magnolia flowers are extremely tough.</p>
+			<hr>
+			<div class="data">
+			<p>Height: 3 - 5 m</p>
+			<p>Width: 1 - 3 m</p>
+			<p>Flower's colour: Pink</p>
+			<p>Flowering time: April</p>
+			</div>
+			<hr>
+			<div class="needs">
+			<p>Water needs: high</p>
+			<p>Light needs: low</p>
+			<p>Warmth needs: low</p>
+			<p>Humidity needs: medium</p>
+			</div>
+		  </div>
+		</div>
+		
+	<!--CHRYSANTHEMUM-->
+	
+	<div class="col-3 col-t-6 flower 2221 2222 2213 2223 2231 1123 1131 1133 2113 indoor medi">
+		<div class="container">
+			<img src="flowers/chrysanthemum.jpeg" alt="Chrysanthemum" class="plant_buttons" onClick="openChrysanthemum()">
+			<div class="dark" onClick="openChrysanthemum()">
+				<p class="flower_name">Chrysanthemum</p>
+			</div>
+		</div>		
+	</div>		
+		
+		<div id="chrysanthemum" class="overlay">
+		  <a href="javascript:void(0)" class="closebtn" onClick="closeChrysanthemum()">&times;</a>
+		  <div class="overlay-content">
+			<p class="plant_name">Chrysanthemum</p>
+			<p class="info_plant">
+			&emsp;Chrysanthemums (/krɪˈsænθəməm/), sometimes called mums or chrysanths, are flowering plants of the genus Chrysanthemum in the family Asteraceae. They are native to Asia and northeastern Europe. Most species originate from East Asia and the center of diversity is in China. Countless horticultural varieties and cultivars exist.</p>
+			<hr>
+			<div class="data">
+			<p>Height: 0.4 m</p>
+			<p>Width: 0.4 m</p>
+			<p>Flower's colour: White, Yellow, Orange, Pink</p>
+			<p>Flowering time: October</p>
+			</div>
+			<hr>
+			<div class="needs">
+			<p>Water needs: medium</p>
+			<p>Light needs: medium</p>
+			<p>Warmth needs: medium</p>
+			<p>Humidity needs: low</p>
+			</div>
+		  </div>
+		</div>
+		
+	<!--ORCHID-->
+	
+	<div class="col-3 col-t-6 flower 2132 2133 2211 2212 2131 2123 1233 1311 1313 3312 outdoor indoor">
+		<div class="container">
+			<img src="flowers/orchid.jpeg" alt="Orchid" class="plant_buttons" onClick="openOrchid()">
+			<div class="dark" onClick="openOrchid()">
+				<p class="flower_name">Orchid</p>
+			</div>
+		</div>		
+	</div>		
+		
+		<div id="orchid" class="overlay">
+		  <a href="javascript:void(0)" class="closebtn" onClick="closeOrchid()">&times;</a>
+		  <div class="overlay-content">
+			<p class="plant_name">Orchid</p>
+			<p class="info_plant">
+			&emsp;The Orchidaceae are a diverse and widespread family of flowering plants, with blooms that are often colourful and fragrant, commonly known as the orchid family.
+			<br>
+			&emsp;Along with the Asteraceae, they are one of the two largest families of flowering plants. The Orchidaceae have about 28,000 currently accepted species, distributed in about 763 genera. The determination of which family is larger is still under debate, because verified data on the members of such enormous families are continually in flux. Regardless, the number of orchid species nearly equals the number of bony fishes and is more than twice the number of bird species, and about four times the number of mammal species.
+			<br>
+			&emsp;The family encompasses about 6–11% of all seed plants. The largest genera are Bulbophyllum (2,000 species), Epidendrum (1,500 species), Dendrobium (1,400 species) and Pleurothallis (1,000 species). It also includes Vanilla–the genus of the vanilla plant, the type genus Orchis, and many commonly cultivated plants such as Phalaenopsis and Cattleya. Moreover, since the introduction of tropical species into cultivation in the 19th century, horticulturists have produced more than 100,000 hybrids and cultivars.</p>
+			<hr>
+			<div class="data">
+			<p>Height: 0.2 m</p>
+			<p>Width: 0.3 m</p>
+			<p>Flower's colour: White, Yellow, Orange, Red, Pink, Purple, Blue, Green</p>
+			<p>Flowering time: Depends</p>
+			</div>
+			<hr>
+			<div class="needs">
+			<p>Water needs: medium</p>
+			<p>Light needs: low</p>
+			<p>Warmth needs: high</p>
+			<p>Humidity needs: medium</p>
+			</div>
+		  </div>
+		</div>
+		
+	<!--CHERRY BLOSSOM-->
+	
+	<div class="col-3 col-t-6 flower 2212 2122 1332 1331 1323 3222 3223 3232 3233 3311 outdoor medi">
+		<div class="container">
+			<img src="flowers/cherryblossom.jpg" alt="cherryblossom" class="plant_buttons" onClick="openCherryblossom()">
+			<div class="dark" onClick="openCherryblossom()">
+				<p class="flower_name">Cherryblossom</p>
+			</div>
+		</div>		
+	</div>		
+		
+		<div id="cherryblossom" class="overlay">
+		  <a href="javascript:void(0)" class="closebtn" onClick="closeCherryblossom()">&times;</a>
+		  <div class="overlay-content">
+			<p class="plant_name">Cherryblossom</p>
+			<p class="info_plant">
+			&emsp;A cherry blossom is a flower of several trees of genus Prunus, particularly the Japanese cherry, Prunus serrulata, which is called sakura after the Japanese.
+			<br>
+			&emsp;Currently they are widely distributed, especially in the temperate zone of the Northern Hemisphere including Japan, Nepal, India, Taiwan, Korea, China, West Siberia, Iran and Afghanistan. Along with the chrysanthemum, the cherry blossom is considered the national flower of Japan.
+			<br>
+			&emsp;Many of the varieties that have been cultivated for ornamental use produce small, unpalatable fruit. Edible cherries generally come from cultivars of the related species Prunus avium and Prunus cerasus.</p>
+			<hr>
+			<div class="data">
+			<p>Height: 5 - 10 m</p>
+			<p>Width: 1.2 m</p>
+			<p>Flower's colour: White, Pink</p>
+			<p>Flowering time: March</p>
+			</div>
+			<hr>
+			<div class="needs">
+			<p>Water needs: medium</p>
+			<p>Light needs: low</p>
+			<p>Warmth needs: medium</p>
+			<p>Humidity needs: medium</p>
+			</div>
+		  </div>
+		</div>
+	
+	
+		
+	<!--CROCUS-->
+	
+	<div class="col-3 col-t-6 2222 3133 3211 3212 3213 3221 2122 2123 2131 2132 2133 2211 2212 2213 flower medi outdoor">
+		<div class="container">
+			<img src="flowers/crocus.jpg" alt="Crocus" class="plant_buttons" onClick="openCrocus()">
+			<div class="dark" onClick="openCrocus()">
+				<p class="flower_name">Crocus</p>
+			</div>
+		</div>		
+	</div>		
+		
+		<div id="crocus" class="overlay">
+		  <a href="javascript:void(0)" class="closebtn" onClick="closeCrocus()">&times;</a>
+		  <div class="overlay-content">
+			<p class="plant_name">Crocus</p>
+			<p class="info_plant">
+			&emsp;Crocus (English plural: crocuses or croci) is a genus of flowering plants in the iris family comprising 90 species of perennials growing from corms. Many are cultivated for their flowers appearing in autumn, winter, or spring. The spice saffron is obtained from the stigmas of Crocus sativus, an autumn-blooming species. Crocuses are native to woodland, scrub, and meadows from sea level to alpine tundra in central and southern Europe, in particular Krokos, Greece, on the islands of the Aegean, North Africa and the Middle East, and across Central Asia to Xinjiang Province in western China.
+			<br>
+			&emsp;The cup-shaped, solitary, salverform flower tapers off into a narrow tube. Their colors vary enormously, although lilac, mauve, yellow, and white are predominant. The grass-like, ensiform leaf shows generally a white central stripe along the leaf axis. The leaf margin is entire. 
+			<br>
+			&emsp;A crocus has three stamens, while a similar-looking toxic plant, colchicum, sometimes popularly referred to as "autumn crocus", has six stamens. In addition, crocus have one style, while colchicum have three.</p>
+			<hr>
+			<div class="data">
+			<p>Height: 0.2 m</p>
+			<p>Width: 0.1 m</p>
+			<p>Flower's colour: Purple</p>
+			<p>Flowering time: April -- May</p>
+			</div>
+			<hr>
+			<div class="needs">
+			<p>Water needs: high</p>
+			<p>Light needs: low</p>
+			<p>Warmth needs: high</p>
+			<p>Humidity needs: high</p>
+			</div>
+		  </div>
+		</div>
+	
+	<!--MEMBRILLO-->
+	
+	<div class="col-3 col-t-6 flower 1221 1211 1212 1211 1133 2213 2221 2223 3213 3221 3222 3223 3231 3232 3233 2231 indoor outdoor balcony">
+		<div class="container">
+			<img src="flowers/membrillo.jpg" alt="Membrillo" class="plant_buttons" onClick="openMembrillo()">
+			<div class="dark" onClick="openMembrillo()">
+				<p class="flower_name">Membrillo</p>
+			</div>
+		</div>		
+	</div>		
+		
+		<div id="membrillo" class="overlay">
+		  <a href="javascript:void(0)" class="closebtn" onClick="closeMembrillo()">&times;</a>
+		  <div class="overlay-content">
+			<p class="plant_name">Membrillo</p>
+			<p class="info_plant">
+			&emsp;Gustavia superba is an understory tree that grows in Central and North-Western South America. Common names include membrillo, sachamango and heaven lotus. The trunk is around 5-10m high with the leaves radiating from the top (like palms).
+			<br>
+			&emsp;Gustavia superba grows naturally as an understory tree, where it is abundant, especially in secondary forests. It appreciates abundant moisture, sun and well drained soil. It branches little until mature, and has a bunch of leaves at the top, so that it resembles a palm. 
+			<br>
+			&emsp;The tree is not widely known outside its native range from Ecuador to Panama and Venezuela, but has been planted in tropical botanical gardens, including in Singapore (where it is referred to as 'pungol') and Australia.</p>
+			<hr>
+			<div class="data">
+			<p>Height: 5 - 7 m</p>
+			<p>Width: 1 m</p>
+			<p>Flower's colour: White, Pink</p>
+			<p>Flowering time: March -- August</p>
+			</div>
+			<hr>
+			<div class="needs">
+			<p>Water needs: low</p>
+			<p>Light needs: medium</p>
+			<p>Warmth needs: medium</p>
+			<p>Humidity needs: low</p>
+			</div>
+		  </div>
+		</div>
+		
+	<!--MONSTERA-->
+	
+	<div class="col-3 col-t-6 flower 3313 3312 3311 3322 3323 2113 2112 2111 1333 1332 1331 1323 1321 2121 2133 indoor outdoor medi">
+		<div class="container">
+			<img src="flowers/monstera.jpg" alt="Monstera" class="plant_buttons" onClick="openMonstera()">
+			<div class="dark" onClick="openMonstera()">
+				<p class="flower_name">Monstera</p>
+			</div>
+		</div>		
+	</div>		
+		
+		<div id="monstera" class="overlay">
+		  <a href="javascript:void(0)" class="closebtn" onClick="closeMonstera()">&times;</a>
+		  <div class="overlay-content">
+			<p class="plant_name">Monstera</p>
+			<p class="info_plant">
+			&emsp;Monstera is a genus of about 50 species of flowering plants in the arum family, Araceae, native to tropical regions of the Americas. The genus is named from the Latin word for "monstrous" or "abnormal", and refers to the unusual leaves with natural holes that members of the genus have.
+			<br>
+			&emsp;They are herbs or evergreen vines, growing to heights of 20 metres (66 ft) in trees, climbing by means of aerial roots which act as hooks over branches; these roots will also grow into the soil to help support the plant. Since the plant roots both into the soil and over trees, it is considered a hemiepiphyte. The leaves are alternate, leathery, dark green, very large, from 25–90 centimetres (9.8–35.4 in) long (up to 130 centimetres (51 in) long in M. dubia) and 15–75 centimetres (5.9–29.5 in) broad, often with holes in the leaf blade. The flowers are borne on a specialised inflorescence called a spadix, 5–45 centimetres (2.0–17.7 in) long; the fruit is a cluster of white berries, edible in some species.
+			<br>
+			&emsp;A crocus has three stamens, while a similar-looking toxic plant, colchicum, sometimes popularly referred to as "autumn crocus", has six stamens. In addition, crocus have one style, while colchicum have three.</p>
+			<hr>
+			<div class="data">
+			<p>Height: 1 m</p>
+			<p>Width: 0.5 m</p>
+			<p>Flower's colour: White</p>
+			<p>Flowering time: April -- May</p>
+			</div>
+			<hr>
+			<div class="needs">
+			<p>Water needs: high</p>
+			<p>Light needs: high</p>
+			<p>Warmth needs: low</p>
+			<p>Humidity needs: high</p>
+			</div>
+		  </div>
+		</div>
+		
+	<!--HIBISCUS-->
+	
+	<div class="col-3 col-t-6 flower 1321 1132 1322 1313 1323 1331 2121 2122 2123 2131 2132 2211 2212 3313 3321 3331 3332 1322 indoor balcony">
+		<div class="container">
+			<img src="flowers/hibiscus.JPG" alt="Hibiscus" class="plant_buttons" onClick="openHibiscus()">
+			<div class="dark" onClick="openHibiscus()">
+				<p class="flower_name">Hibiscus</p>
+			</div>
+		</div>		
+	</div>		
+		
+		<div id="hibiscus" class="overlay">
+		  <a href="javascript:void(0)" class="closebtn" onClick="closeHibiscus()">&times;</a>
+		  <div class="overlay-content">
+			<p class="plant_name">Hibiscus</p>
+			<p class="info_plant">
+			&emsp;Hibiscus is a genus of flowering plants in the mallow family, Malvaceae. The genus is quite large, comprising several hundred species that are native to warm temperate, subtropical and tropical regions throughout the world. Member species are renowned for their large, showy flowers and those species are commonly known simply as "hibiscus", or less widely known as rose mallow. There are also names for hibiscus such as hardy hibiscus, rose of sharon, and tropical hibiscus.
+			<br>
+			&emsp;The genus includes both annual and perennial herbaceous plants, as well as woody shrubs and small trees. The generic name is derived from the Greek name ἰβίσκος (hibiskos) which Pedanius Dioscorides gave to Althaea officinalis (c. 40–90 AD).
+			<br>
+			&emsp;Several species are widely cultivated as ornamental plants, notably Hibiscus syriacus and Hibiscus rosa-sinensis.</p>
+			<hr>
+			<div class="data">
+			<p>Height: 1 - 2 m</p>
+			<p>Width: 0.5 - 1 m</p>
+			<p>Flower's colour: Red</p>
+			<p>Flowering time: May -- August</p>
+			</div>
+			<hr>
+			<div class="needs">
+			<p>Water needs: low</p>
+			<p>Light needs: high</p>
+			<p>Warmth needs: medium</p>
+			<p>Humidity needs: low</p>
+			</div>
+		  </div>
+		</div>
+	
+	
+	
+	<!--EDELWEISS-->
+	
+	<div class="col-3 col-t-6 flower 3311 2331 2332 3111 3332 3333 3132 1211 1212 1222 1223 2232 2333 2311 2312 2313 2321 1321 outdoor">
+		<div class="container">
+			<img src="flowers/edelweiss.jpg" alt="Edelweiss" class="plant_buttons" onClick="openEdelweiss()">
+			<div class="dark" onClick="openEdelweiss()">
+				<p class="flower_name">Edelweiss</p>
+			</div>
+		</div>		
+	</div>		
+		
+		<div id="edelweiss" class="overlay">
+		  <a href="javascript:void(0)" class="closebtn" onClick="closeEdelweiss()">&times;</a>
+		  <div class="overlay-content">
+			<p class="plant_name">Edelweiss</p>
+			<p class="info_plant">
+			&emsp;Leontopodium nivale, commonly called edelweiss (English pronunciation /ˈeɪdəlvaɪs/), is a mountain flower belonging to the daisy or sunflower family Asteraceae. The plant prefers rocky limestone places at about 1,800–3,000 metres (5,900–9,800 ft) altitude. It is non-toxic and has been used in traditional medicine as a remedy against abdominal and respiratory diseases. The dense hair appears to protect the plant from cold, aridity, and ultraviolet radiation. It is a scarce, short-lived flower found in remote mountain areas and has been used as a symbol for alpinism, for rugged beauty and purity associated with the Alps and Carpathians, and as a national symbol, especially of Romania, Austria, Bulgaria, Slovenia, and Switzerland. According to folk tradition, giving this flower to a loved one is a promise of dedication.
+			<br>
+			&emsp;The flower's common name derives from the German word "Edelweiß", which is a compound of edel "noble" and weiß "white". In Romania it is known as Floare de colț which means Cliffhanger's flower. In the Italian speaking Alps the flower is referred as "Stella Alpina", while in the French Alps as "Étoile des Alpes", both names meaning "Star of the Alps".
+			<br>
+			&emsp;The plant's leaves and flowers are covered with white hairs, and appear woolly (tomentose). Flowering stalks of edelweiss can grow to a size of 3–20 centimetres (1–8 in) in the wild, or, up to 40 cm (16 in) in cultivation. Each bloom consists of five to six small yellow clustered spikelet-florets (5 mm, 3⁄16 in) surrounded by fuzzy white "petals" (technically, bracts) in a double-star formation. The flowers bloom between July and September.</p>
+			<hr>
+			<div class="data">
+			<p>Height: 0.2 - 0.5 m</p>
+			<p>Width: 0.1 m</p>
+			<p>Flower's colour: White</p>
+			<p>Flowering time: March -- April</p>
+			</div>
+			<hr>
+			<div class="needs">
+			<p>Water needs: high</p>
+			<p>Light needs: high</p>
+			<p>Warmth needs: low</p>
+			<p>Humidity needs: low</p>
+			</div>
+		  </div>
+		</div>
+		
+	<!--CYCLAMEN-->
+	
+	<div class="col-3 col-t-6 flower 1132 1131 1133 1211 1212 2322 2323 2331 2332 2333 3111 3112 3113 3121 indoor">
+		<div class="container">
+			<img src="flowers/cyclamen.jpg" alt="Cyclamen" class="plant_buttons" onClick="openCyclamen()">
+			<div class="dark" onClick="openCyclamen()">
+				<p class="flower_name">Cyclamen</p>
+			</div>
+		</div>		
+	</div>		
+		
+		<div id="cyclamen" class="overlay">
+		  <a href="javascript:void(0)" class="closebtn" onClick="closeCyclamen()">&times;</a>
+		  <div class="overlay-content">
+			<p class="plant_name">Cyclamen</p>
+			<p class="info_plant">
+			&emsp;Cyclamen (US: /ˈsaɪkləmɛn/ SY-klə-men or UK: /ˈsɪkləmɛn/ SIK-lə-men) is a genus of 23 species of perennial flowering plants in the family Primulaceae. Cyclamen species are native to Europe and the Mediterranean Basin east to Iran, with one species in Somalia. They grow from tubers and are valued for their flowers with upswept petals and variably patterned leaves.
+			<br>
+			&emsp;It was traditionally classified in the family Primulaceae, was reclassified in the family Myrsinaceae in 2000, and finally, in 2009 with the introduction of the APG III system, was returned to the subfamily Myrsinoideae within the family Primulaceae.
+			<br>
+			&emsp;Cyclamens have a tuber, from which the leaves, flowers and roots grow. In most species, leaves come up in autumn, grow through the winter, and then die in spring, then the plant goes dormant through the dry Mediterranean summer.</p>
+			<hr>
+			<div class="data">
+			<p>Height: 0.2 - 0.5 m</p>
+			<p>Width: 0.2 m</p>
+			<p>Flower's colour: White, Pink, Purple</p>
+			<p>Flowering time: March -- April</p>
+			</div>
+			<hr>
+			<div class="needs">
+			<p>Water needs: low</p>
+			<p>Light needs: low</p>
+			<p>Warmth needs: high</p>
+			<p>Humidity needs: medium</p>
+			</div>
+		  </div>
+		</div>
+		
+	<!--LILAC-->
+	
+	<div class="col-3 col-t-6 flower 2232 2233 2311 2231 2223 2221 3311 3313 3312 3321 3322 3323 3331 3332 3211 3132 1322 medi outdoor">
+		<div class="container">
+			<img src="flowers/lilac.jpeg" alt="Lilac" class="plant_buttons" onClick="openLilac()">
+			<div class="dark" onClick="openLilac()">
+				<p class="flower_name">Lilac</p>
+			</div>
+		</div>		
+	</div>		
+		
+		<div id="lilac" class="overlay">
+		  <a href="javascript:void(0)" class="closebtn" onClick="closeLilac()">&times;</a>
+		  <div class="overlay-content">
+			<p class="plant_name">Lilac</p>
+			<p class="info_plant">
+			&emsp;Syringa (lilac) is a genus of 12 currently recognized species of flowering woody plants in the olive family (Oleaceae), native to woodland and scrub from southeastern Europe to eastern Asia, and widely and commonly cultivated in temperate areas elsewhere.
+			<br>
+			&emsp;The genus is most closely related to Ligustrum (privet), classified with it in Oleaceae tribus Oleeae subtribus Ligustrinae.
+			<br>
+			&emsp;Lilacs are used as food plants by the larvae of some Lepidoptera species including copper underwing, scalloped oak and Svensson's copper underwing.</p>
+			<hr>
+			<div class="data">
+			<p>Height: 5 - 10 m</p>
+			<p>Width: 2 - 5 m</p>
+			<p>Flower's colour: White, Pink, Purple</p>
+			<p>Flowering time: March -- April</p>
+			</div>
+			<hr>
+			<div class="needs">
+			<p>Water needs: medium</p>
+			<p>Light needs: medium</p>
+			<p>Warmth needs: high</p>
+			<p>Humidity needs: medium</p>
+			</div>
+		  </div>
+		</div>
+		
+	<!--PULSATILLA-->
+	
+	<div class="col-3 col-t-6 flower 1333 2111 3112 1332 1322 3333 3222 3232 3211 2333 1212 1213 2121 3212 medi balcony outdoor">
+		<div class="container">
+			<img src="flowers/pulsatilla.jpeg" alt="Pulsatilla" class="plant_buttons" onClick="openPulsatilla()">
+			<div class="dark" onClick="openPulsatilla()">
+				<p class="flower_name">Pulsatilla</p>
+			</div>
+		</div>		
+	</div>		
+		
+		<div id="pulsatilla" class="overlay">
+		  <a href="javascript:void(0)" class="closebtn" onClick="closePulsatilla()">&times;</a>
+		  <div class="overlay-content">
+			<p class="plant_name">Pulsatilla</p>
+			<p class="info_plant">
+			&emsp;The genus Pulsatilla contains about 33 species of herbaceous perennials native to meadows and prairies of North America, Europe, and Asia. Common names include pasque flower (or pasqueflower), wind flower, prairie crocus, Easter flower, and meadow anemone. Several species are valued ornamentals because of their finely-dissected leaves, solitary bell-shaped flowers, and plumed seed heads. The showy part of the flower consists of sepals, not petals.
+			<br>
+			&emsp;The genus Pulsatilla is sometimes considered a subgenus under the genus Anemone or as an informally named "group" within Anemone subgenus Anemone section Pulsatilloides.
+			<br>
+			&emsp;The flower blooms early in spring, which leads to the common name Pasque flower, since Pasque refers to Easter (Passover). In South Dakota in the center of North America, the flower sprouts from late March through early June.</p>
+			<hr>
+			<div class="data">
+			<p>Height: 0.2 - 0.5 m</p>
+			<p>Width: 0.2 - 0.3 m</p>
+			<p>Flower's colour: Purple</p>
+			<p>Flowering time: March -- April</p>
+			</div>
+			<hr>
+			<div class="needs">
+			<p>Water needs: low</p>
+			<p>Light needs: high</p>
+			<p>Warmth needs: high</p>
+			<p>Humidity needs: high</p>
+			</div>
+		  </div>
+		</div>
+		
+	</div>
+	
+	</div>
+	
+	<footer class="black">
+	<br>
+		<img src="logok/square_logo.PNG" alt="Berrie's logo" id="negyzet_logo">
+		<a href="#" class="fa fa-facebook"></a>
+		<a href="#" class="fa fa-twitter"></a>
+		<a href="#" class="fa fa-instagram"></a>
+		<br>
+		<p class="white">This is not a real company's site. Székely Dalma &copy; 2018</p>
+		<br>
+	</footer>
+</body>
+</HTML>

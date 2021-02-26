@@ -1,0 +1,461 @@
+<!DOCTYPE HTML>
+<HTML lang="en">
+<head>
+	<title>Berrie's Garden Centre</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<meta name="author" content="Székely Dalma">
+	<meta name="copyright" content="Property of Székely Dalma.">
+	<meta name="description" content="Imaginary corporation's site">
+	
+	<link rel="stylesheet" href="Berriestyles.css">
+	<script src="Berriesjavascript.js"></script>
+
+	<script src="vue.js"></script>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--social media ikonok-->
+	
+	<link rel="shortcut icon" type="image/png" href="logok/favicon.png"/> <!--faviconhoz-->
+	
+</head>
+<body>
+		
+	<div class="topbg-img"><br><br><br><br><br><br><br><br><br><br><br></div>
+	
+	<div id="topnav" class="topnav1">
+		<div>
+			<a href="about.html" class="tophovernav">About Us</a>
+			<a href="our_plants.html" class="tophovernav">Our Plants</a>
+			<a href="tryme.html" class="tophovernav">Try Me</a>
+			<a href="garden_tips.html" class="tophovernav  active">Garden Tips</a>
+			<a href="gallery.html" class="tophovernav">Gallery</a>
+			<a href="contact_us.html" class="tophovernav">Contact Us</a>
+			
+			<a href="javascript:void(0);" class="icon" onclick="menuFunction()">
+			<i class="fa fa-bars"></i></a>
+		</div>
+	</div>
+	
+	<section class="bg-img-garden_tips">
+	<h1>Garden Tips</h1>
+	</section>
+	
+	<div class="black">
+		<br>		
+	</div>
+	
+	<div class="bg-img-garden_tips2">
+		<div class="row">
+			<div class="col-8 col-t-12">
+					<div class="expert">					
+					<p class="expert_name">
+						<img src="experts/Mari.JPG" alt="PictureOfMari" class="expert_pic">Mari:
+					</p>
+					<p class="answer">Hi Betty & Gale,<br>here's how you can lighten your heavy pots:<br>
+					Take the strain out of lifting large planters and pots by filling the pot one-third to one-half full with packing peanuts. Be sure to place a piece of landscape fabric on top of the packing peanuts and then layer on your potting soil. To reduce the weight of the pot further, use a potting mix with lots of vermiculite and peat moss.<br><br>
+					Have a nice day!<br>
+					Mari</p>
+					<br>
+					<br>
+					<br>
+					
+					<div id="thanks1" class="thanks">
+                        <div>
+
+                            <p v-if="!isThanked1" class="thank">75&nbsp;753 thanks</p>
+
+                            <p v-if="isThanked1" class="thank">Thanked by you and 75&nbsp;753 others</p>
+
+                           
+                            <a href="#/" class="thankYou" v-on:click="onLikeButtonClick">Thank you</a>
+                            <br>
+                            <br>
+                            
+                            <input type="text" v-model="text"> 
+                            <br>
+                            <a href="#/" class="comment" v-on:click="addComment">Add comment</a>
+							
+							<div class="comments">
+								<div class="commentName">
+									Jane
+								</div>
+								<div class="CommentMessage">
+									Oh wow! I did not think about that. Good job!
+								</div>
+							</div>
+							
+                            <div  class="comments" v-for="comment in comments"> 
+                                <div class="commentName">
+                                    {{comment.name}}
+								</div>
+								
+                                <div class="commentMessage">
+                                    {{comment.message}}
+                                </div>
+                            </div>
+							
+						</div>
+					</div>
+					</div>
+					<div class="problem">
+					<p class="question"><span class="huge">Hi Berrie's,</span><br><br>I have a question about my lovely garden.<br>
+					I started to build my garden 50 years ago, when I was younger and therefore stronger. Nowadays, I can't pick up the pots as easily, as before.<br>
+					Can you give me some advice about lightening them a bit?<br><br>Thanks, Betty & Gale.</p>
+                    </div>
+					
+										
+			</div>
+
+
+
+
+			<div class="col-4 col-t-12">
+				<aside class="aside_QandA">
+					<p class="QandA">Questions & Answers</p>
+					<p class="subtitle">everything about gardens</p>
+					<br>
+					<p class="content">We are often asked for advice about gardens, so we made a whole new platform to make it easier for our customers to get in contant with us. </p><br>
+					
+					<p>You have trouble with the plants you brought from us? <br> Your previous plants decided to not like the environment anymore?<br>You don't know how to use some of the garden equipments?<br> Just fill our question form and get an explanation and a solution to your precious plants' problems!</p><br>
+					
+					<p>Our experts have a lot of scientific research to do, so don't worry, if you don't get your answers rightaway. It may take 2 or 3 days for them to read your question, do the research for the best solution and write a proper answer. <br>Nonetheless, you may not worry if your question is time-sensitive or you just don't like the wait. You can call us anytime to solve your problem immediately.</p><br>
+					
+					<p class="content">If you have any questions, go ahead and tell us about it:<br><button id="question" onClick="openForm()">I have a Question</button></p>
+				</aside>
+				<br><br><br><br><br><br>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-8 col-t-12">
+					<div class="expert">					
+					<p class="expert_name">
+						<img src="experts/Bence.JPG" alt="PictureOfBence" class="expert_pic">Bence:
+					</p>
+					<p class="answer">Hi Drew & Larry,<br>here's how you can make your shovel less sticky:<br>
+					Whether you're dealing with wet snow or mucky soil, a dose of spray lubricant on your shovel will make the sticky stuff slip right off. Use a lubricant that contains silicone or Teflon and recoat the shovel occasionally.<br><br>
+					Have a nice day!<br>
+					Bence</p>
+					
+					
+					<div id="thanks2" class="thanks">
+                        <div>
+
+                            <p v-if="!isThanked2" class="thank">7&nbsp;575 thanks</p>
+
+                            <p v-if="isThanked2" class="thank">Thanked by you and 7&nbsp;575 others</p>
+
+                           
+                            <a href="#/" class="thankYou" v-on:click="onLikeButtonClick">Thank you</a>
+                            <br>
+                            <br>
+                            
+                            <input type="text" v-model="text"> 
+                            <br>
+                            <a href="#/" class="comment" v-on:click="addComment">Add comment</a>
+							
+							
+							<div class="comments">
+								<div class="commentName">
+									Tom
+								</div>
+								<div class="CommentMessage">
+									What an idea! I will try it, as well!
+								</div>
+							</div>
+							
+							<div class="comments">
+								<div class="commentName">
+									Drew
+								</div>
+								<div class="CommentMessage">
+									It really did help, thank you Bence! Now I can do the job 10 times easier.
+								</div>
+							</div>
+							
+                            <div  class="comments" v-for="comment in comments"> 
+                                <div class="commentName">
+                                    {{comment.name}}
+								</div>
+								
+                                <div class="commentMessage">
+                                    {{comment.message}}
+                                </div>
+                            </div>
+
+						</div>
+					</div>
+					</div>
+					
+					<div class="problem">
+					<p class="question"><span class="huge">Hi Berrie's,</span><br><br>I have a question about my lovely garden.<br>
+					My wife loves her garden, so we spend every weekend doing something to make it better for our plants. Since she has the ideas, I have to do the shoveling. You know its really hard during these rainy days, because all the wet soil sticks to my shovel and it takes twice as much time as before, to dig a hole for one of our precious plants.<br>
+					Can you give me some advice about making it less sticky?<br><br>Thanks, Drew & Larry.</p>
+					</div>							
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-8 col-t-12">
+					<div class="expert">					
+					<p class="expert_name">
+						<img src="experts/Zsuzsi.JPG" alt="PictureOfZsuzsi" class="expert_pic">Zsuzsi:
+					</p>
+					<p class="answer">Hi April & Archie,<br>here's how you can make the compost and soil mixing easier:<br>
+					There is an easy way to mix compost into your soil without a lot of back breaking work: Spread the compost over your garden in the late fall, after all the harvesting is done. Cover with a winter mulch such as hay or chopped leaves and let nature take its course. By spring, the melting snow and soil organisms will have worked the compost in for you.<br><br>
+					Have a nice day!<br>
+					Zsuzsi</p>
+					
+					<div id="thanks3" class="thanks">
+                        <div>
+
+                            <p v-if="!isThanked3" class="thank">287&nbsp;363 thanks</p>
+
+                            <p v-if="isThanked3" class="thank">Thanked by you and 287&nbsp;363 others</p>
+
+                           
+                            <a href="#/" class="thankYou" v-on:click="onLikeButtonClick">Thank you</a>
+                            <br>
+                            <br>
+                            
+                            <input type="text" v-model="text"> 
+                            <br>
+                            <a href="#/" class="comment" v-on:click="addComment">Add comment</a>
+							
+							<div class="comments">
+								<div class="commentName">
+									April
+								</div>
+								<div class="CommentMessage">
+									Oh, my darling! Thank you so much for your help. It helped us a whole lot!
+								</div>
+							</div>
+
+                            <div  class="comments" v-for="comment in comments"> 
+                                <div class="commentName">
+                                    {{comment.name}}
+								</div>
+								
+                                <div class="commentMessage">
+                                    {{comment.message}}
+                                </div>
+                            </div>
+							
+						</div>
+					</div>
+					</div>
+					<div class="problem">
+					<p class="question"><span class="huge">Hi Berrie's,</span><br><br>I have a question about my lovely garden.<br>
+					We were thinking about mixing the compost we made during the years into the soil. Although, we're not really young, and would like to avoid the long hours of kneeding.<br>
+					Can you give me some advice about doing it easier?<br><br>Thanks, April & Archie.</p>
+					</div>							
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-8 col-t-12">
+					<div class="expert">					
+					<p class="expert_name">
+						<img src="experts/Patrik.jpg" alt="PictureOfPatrik" class="expert_pic">Patrik:
+					</p>
+					<p class="answer">Hi Kate & Bob,<br>here's how you can make it easier to read the water level on your rain gauge:<br>
+					Drip food coloring tinto the bottom of your rain gauge the next time you empty it out. When it showers, the coloring will reconstitute and tint the water to make the gauge easier to read.<br><br>
+					Have a nice day!<br>
+					Patrik</p>
+					
+					<div id="thanks4" class="thanks">
+                        <div>
+
+                            <p v-if="!isThanked4" class="thank">93&nbsp;516 thanks</p>
+
+                            <p v-if="isThanked4" class="thank">Thanked by you and 93&nbsp;516 others</p>
+
+                           
+                            <a href="#/" class="thankYou" v-on:click="onLikeButtonClick">Thank you</a>
+                            <br>
+                            <br>
+                            
+                            <input type="text" v-model="text"> 
+                            <br>
+                            <a href="#/" class="comment" v-on:click="addComment">Add comment</a>
+							
+							<div class="comments">
+								<div class="commentName">
+									Kate
+								</div>
+								<div class="CommentMessage">
+									How did we not think of this! You are amazing!
+								</div>
+							</div>
+
+                            <div  class="comments" v-for="comment in comments"> 
+                                <div class="commentName">
+                                    {{comment.name}}
+								</div>
+								
+                                <div class="commentMessage">
+                                    {{comment.message}}
+                                </div>
+                            </div>
+							
+						</div>
+					</div>
+					</div>
+					<div class="problem">
+					<p class="question"><span class="huge">Hi Berrie's,</span><br><br>I have a question about my lovely garden.<br>
+					We're not so good with plants's water needs, so we bought a rain gauge to measure how much water they get from the sky and then we try to calcute how much more water to give to them by expert books. Unfortunately, we can't really read, where the water level is.<br>
+					Can you give me some advice about how to read the water level on the rain gauge?<br><br>Thanks, Kate & Bob.</p>
+					</div>							
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-8 col-t-12">
+					<div class="expert">					
+					<p class="expert_name">
+						<img src="experts/Andrew.PNG" alt="PictureOfAndrew" class="expert_pic">Andrew:
+					</p>
+					<p class="answer">Hi Nancy & Tod,<br>here's how you can make your plants feel better:<br>
+					Fertilizer is not the answer to growing the best plants; soil quality is. Add organic amendments such as compost and well-aged manure to your soil. The best soil structure is crumbly, easy to dig, accepts water easily, and offers oxygen for plant roots. If you choose to use fertilizer, use an organic one to add nitrogen, phosphate, and potash.<br><br>
+					Have a nice day!<br>
+					Patrik</p>
+					
+					<div id="thanks5" class="thanks">
+                        <div>
+
+                            <p v-if="!isThanked5" class="thank">65&nbsp;240 thanks</p>
+
+                            <p v-if="isThanked5" class="thank">Thanked by you and 65&nbsp;240 others</p>
+
+                           
+                            <a href="#/" class="thankYou" v-on:click="onLikeButtonClick">Thank you</a>
+                            <br>
+                            <br>
+                            
+                            <input type="text" v-model="text"> 
+                            <br>
+                            <a href="#/" class="comment" v-on:click="addComment">Add comment</a>
+							
+							<div class="comments">
+								<div class="commentName">
+									Glenn
+								</div>
+								<div class="CommentMessage">
+									It is really a good advice, I will give them to my plants, as well!
+								</div>
+							</div>
+							
+							<div class="comments">
+								<div class="commentName">
+									Tod
+								</div>
+								<div class="CommentMessage">
+									It's working, every one of our plants our flowering to thank you.
+								</div>
+							</div>
+							
+							<div class="comments">
+								<div class="commentName">
+									Nancy
+								</div>
+								<div class="CommentMessage">
+									I went to the local market and bought everything today!
+								</div>
+							</div>
+
+							
+                            <div  class="comments" v-for="comment in comments"> 
+                                <div class="commentName">
+                                    {{comment.name}}
+								</div>
+								
+                                <div class="commentMessage">
+                                    {{comment.message}}
+                                </div>
+                            </div>
+							
+						</div>
+					</div>
+					</div>
+					<div class="problem">
+					<p class="question"><span class="huge">Hi Berrie's,</span><br><br>I have a question about my lovely garden.<br>
+					We were thinking about using fertilizers in our garden, so that our plants felt better. We don't really know which one to choose, though.<br>
+					Can you give me some advice about whoch fertilizer to use?<br><br>Thanks, Nancy & Tod.</p>
+					</div>							
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-8 col-t-12">
+					<div class="expert">					
+					<p class="expert_name">
+						<img src="experts/Dóri.jpg" alt="PictureOfDóri" class="expert_pic">Dóri:
+					</p>
+					<p class="answer">Hi Stacey & Fred,<br>here's how you mound your potato plants:<br>
+					Mound your potato plants deep under the soil and store harvested potatoes in complete darkness. Exposure to light turns the skin of potatoes green, an indication that the potato has produced a colorless alkaloid called solanine, a bitter-tasting toxin that, consumed in large quantities, can cause illness. Cut away any green portions or sprouts on potatoes to avoid the problem.<br><br>
+					Have a nice day!<br>
+					Dóri</p>
+					
+					<div id="thanks6" class="thanks">
+                        <div>
+
+                            <p v-if="!isThanked6" class="thank">126&nbsp;504 thanks</p>
+
+                            <p v-if="isThanked6" class="thank">Thanked by you and 126&nbsp;504 others</p>
+
+                           
+                            <a href="#/" class="thankYou" v-on:click="onLikeButtonClick">Thank you</a>
+                            <br>
+                            <br>
+                            
+                            <input type="text" v-model="text"> 
+                            <br>
+                            <a href="#/" class="comment" v-on:click="addComment">Add comment</a>
+							
+							<div class="comments">
+								<div class="commentName">
+									Stacey
+								</div>
+								<div class="CommentMessage">
+									I'm so happy you could help! This was wonderfully easy and the potatoes are so delicious now!
+								</div>
+							</div>
+
+                            <div  class="comments" v-for="comment in comments"> 
+                                <div class="commentName">
+                                    {{comment.name}}
+								</div>
+								
+                                <div class="commentMessage">
+                                    {{comment.message}}
+                                </div>
+                            </div>
+							
+						</div>
+					</div>
+					</div>
+					<div class="problem">
+					<p class="question"><span class="huge">Hi Berrie's,</span><br><br>I have a question about my lovely garden.<br>
+					Recently, we bought some potato plants, but we are not sure how to properly mound them.<br>
+					Can you give me some advice about how to mound our potato plants?<br><br>Thanks, Stacey & Fred.</p>
+					</div>							
+			</div>
+		</div>
+		
+	</div>
+	
+	<footer class="black">
+	<br>
+		<img src="logok/square_logo.PNG" alt="Berrie's logo" id="negyzet_logo">
+		<a href="#" class="fa fa-facebook"></a>
+		<a href="#" class="fa fa-twitter"></a>
+		<a href="#" class="fa fa-instagram"></a>
+		<br>
+		<p class="white">This is not a real company's site. Székely Dalma &copy; 2018</p>
+		<br>
+	</footer>
+	<script src="./account-component.js"></script>
+	<script src="vuescript.js"></script>
+</body>
+</HTML>

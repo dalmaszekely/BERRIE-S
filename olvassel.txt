@@ -1,0 +1,14 @@
+Oldal készítõje: Székely Dalma
+
+Weblapom internetcíme: http://www.web.uni-corvinus.hu/~f6139u
+
+Weboldalam leírása: Egy nem létezõ faiskola honlapja, melyen meg lehet nézni az aktuális növényeiket és kérdéseket lehet feltenni szakembereiknek. 
+
+Források:
+Növények szövegei: Wikipedia
+Felugró ablak a növényeknél: W3schools-os How To alapján (https://www.w3schools.com/howto/howto_js_sidenav.asp)
+Menü: W3schools-os How To alapján (https://www.w3schools.com/howto/howto_js_topnav_responsive.asp)
+
+Html5 form elemek a form.html-ben:
+Fájl feltöltés
+Email

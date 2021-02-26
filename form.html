@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<HTML lang="en">
+<head>
+	<title>Berrie's Garden Centre</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<meta name="author" content="Székely Dalma">
+	<meta name="copyright" content="Property of Székely Dalma.">
+	<meta name="description" content="Imaginary corporation's site">
+	
+	<link rel="stylesheet" href="Berriestyles.css">
+	<script src="Berriesjavascript.js"></script>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--social media ikonok-->
+	
+	<link rel="shortcut icon" type="image/png" href="logok/favicon.png"/> <!--faviconhoz-->
+	
+	<script src="jQuery/jquery-3.3.1.min.js"></script>
+	
+	<script src="jQuery/jQuery_validation/dist/jquery.validate.min.js"></script>
+	
+	<script>
+	$(document).ready(function(){
+			$("#myform").validate({
+			
+				rules: {
+					name: "required",
+					email: {
+						required: true,
+						email: true,
+					},
+					detailedQuestion: "required",
+					},
+				
+				messages: {
+					name: " Please write your name!",
+					email: {
+						required: "Please write your email!",
+						email: "Please write a valid email!"
+					},
+					detailedQuestion: "Please describe your problem!",
+					}
+			});
+		});</script>
+	
+</head>
+<body>
+		
+	<div class="topbg-img"><br><br><br><br><br><br><br><br><br><br><br></div>
+	
+	<div id="topnav" class="topnav1">
+		<div>
+			<a href="about.html" class="tophovernav">About Us</a>
+			<a href="our_plants.html" class="tophovernav">Our Plants</a>
+			<a href="tryme.html" class="tophovernav">Try Me</a>
+			<a href="garden_tips.html" class="tophovernav  active">Garden Tips</a>
+			<a href="gallery.html" class="tophovernav">Gallery</a>
+			<a href="contact_us.html" class="tophovernav">Contact Us</a>
+			
+			<a href="javascript:void(0);" class="icon" onclick="menuFunction()">
+			<i class="fa fa-bars"></i></a>
+		</div>
+	</div>
+	
+	<section class="bg-img-garden_tips">
+	<h1>Garden Tips</h1>
+	</section>
+	
+	<div class="black">
+		<br>
+	</div>
+	
+	<div class="form">
+	<div class="row">
+	<form id="myform" method="post" action="http://szamtud.uni-corvinus.hu/~blang/receive.php" novalidate>
+		<div class="col-3 col-t-2"></div>
+		<div class="col-6 col-t-8 toBeWhite">
+			<p class="ask">Ask a Question</p><br><br><br>
+			<div class="toTheCenter">
+				<label for="name">Name</label>
+				<input type="text" id="name" name="name" placeholder="Your name"><br><br><br>
+				<label for="email">Email</label>
+				<input type="email" id="email" name="email" placeholder="example@email.com"><br><br><br>
+				<label for="category">Category</label>
+				<select id="category" name="category">
+					<option value="newPlantAdvice">New Plant Advice</option>
+					<option value="sickPlant">Sick Plant</option>
+					<option value="gardeningTip">Gardening Tip</option>
+					<option value="problemBugs">Problem with Bugs</option>
+					<option value="else">Else</option>
+				</select><br><br><br>
+				<label for="detailedQuestion">Detailed Question</label><br><br>
+				<textarea cols="30" rows="5" name="detailedQuestion" id="detailedQuestion" placeholder="Your detailed question"></textarea><br><br>
+				<label for="picAttach">Attach a Picture (not required)</label><br><br>
+				<input type="file" id="picAttach" name="file" accept="image/png, image/jpeg, image/jpg"><br><br><br>
+				<div class="toTheRealCenter">
+				<input type="submit" value="Send" id="bigger">
+				</div>
+			</div>
+		</div>
+		<div class="col-3 col-t-2"></div>
+	</form></div>
+	</div>
+	
+	<footer class="black">
+	<br>
+		<img src="logok/square_logo.PNG" alt="Berrie's logo" id="negyzet_logo">
+		<a href="#" class="fa fa-facebook"></a>
+		<a href="#" class="fa fa-twitter"></a>
+		<a href="#" class="fa fa-instagram"></a>
+		<br>
+		<p class="white">This is not a real company's site. Székely Dalma &copy; 2018</p>
+		<br>
+	</footer>
+</body>
+</HTML>

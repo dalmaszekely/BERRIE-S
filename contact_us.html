@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<HTML lang="en">
+<head>
+	<title>Berrie's Garden Centre</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<meta name="author" content="Székely Dalma">
+	<meta name="copyright" content="Property of Székely Dalma.">
+	<meta name="description" content="Imaginary corporation's site">
+	
+	<link rel="stylesheet" href="Berriestyles.css">
+	<script src="Berriesjavascript.js"></script>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--social media ikonok-->
+	
+	<link rel="shortcut icon" type="image/png" href="logok/favicon.png"/> <!--faviconhoz-->
+	
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin=""/> <!--maphez-->
+	<script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js" integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw==" crossorigin=""></script> <!--maphez-->
+</head>
+<body>
+		
+	<div class="topbg-img"><br><br><br><br><br><br><br><br><br><br><br></div>
+	
+	<div id="topnav" class="topnav1">
+		<div>
+			<a href="about.html" class="tophovernav">About Us</a>
+			<a href="our_plants.html" class="tophovernav">Our Plants</a>
+			<a href="tryme.html" class="tophovernav">Try Me</a>
+			<a href="garden_tips.html" class="tophovernav">Garden Tips</a>
+			<a href="gallery.html" class="tophovernav">Gallery</a>
+			<a href="contact_us.html" class="tophovernav  active">Contact Us</a>
+			
+			<a href="javascript:void(0);" class="icon" onclick="menuFunction()">
+			<i class="fa fa-bars"></i></a>
+		</div>
+	</div>
+	
+	<section class="bg-img-contact_us">
+	<h1>Contact Us</h1>
+	</section>
+	
+	<div class="black">
+		<br>	
+	</div>
+	
+	<div class="bg-img-contact_us2">
+		<div class="row">
+			<div class="col-3 col-t-2"></div>
+				<div class="col-6 col-t-8 article_about white">
+					<br>
+					<br>
+					<p class="huge">OPENING HOURS</p>
+					<br>
+					<div class="toTheCenterMod">
+					<p>Monday - Friday:&emsp;8:00 - 20:00</p>
+					<p>Saturday:&emsp;9:00 - 19:00</p>
+					<p>Sunday:&emsp;10:00 - 18:00</p>
+					</div>
+					<hr>
+					<br>
+					<p class="huge toTheRight">CONTACT</p>
+					<br>
+					<div class="toTheCenterMod">
+					<p>Phone:&emsp;+44 20 7946 0325</p>
+					<p>Email:&emsp;berries@gardencentre.com</p>
+					</div>
+					<hr>
+					<br>
+					<p class="huge">ADDRESS</p>
+					<br>
+					<div class="toTheCenterMod">
+					<p>Street:&emsp;103 Beech Tree Road</p>
+					<p>City:&emsp;HOLMER GREEN</p>
+					<p>Zip Code:&emsp;HP15 6UZ</p>
+					</div>
+				</div>
+			<div class="col-3 col-t-2"></div>
+		</div>	
+	</div>
+	
+	<div class="black">
+		<br>	
+	</div>
+	
+	<div class="phone tablet computer" id="mapDiv"></div>
+	
+	<footer class="black">
+	<br>
+		<img src="logok/square_logo.PNG" alt="Berrie's logo" id="negyzet_logo">
+		<a href="#" class="fa fa-facebook"></a>
+		<a href="#" class="fa fa-twitter"></a>
+		<a href="#" class="fa fa-instagram"></a>
+		<br>
+		<p class="white">This is not a real company's site. Székely Dalma &copy; 2018</p>
+		<br>
+	</footer>
+	
+	<script>
+		var lat = 51.668160;
+		var lon = -0.699704;
+    
+		map = L.map('mapDiv').setView([lat, lon], 13);
+   
+		L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors',
+		maxZoom: 20,minZoom:15
+		}).addTo(map);
+   
+		marker = L.marker([lat, lon]).addTo(map);
+    
+		marker.bindPopup("<b>Berrie's Garden Centre</b><br />103 Beech Tree Road<br />Holmer Green").openPopup();
+	</script>
+</body>
+</HTML>

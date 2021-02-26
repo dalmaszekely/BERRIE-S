@@ -1,0 +1,911 @@
+/*====ALTALANOS====*/
+*{
+	box-sizing: border-box;
+}
+html{
+	padding: 0px;
+	margin: 0px;
+}
+body{
+	padding: 0px;
+	margin: 0px;
+}
+#welcomepage{
+	background-color: rgb(0,0,0);
+}
+p{
+	margin: 0px;
+}
+
+
+/*====NAVBAR====*/
+
+#navbar{
+	overflow: hidden;
+	background-color: rgb(0,0,0);
+	padding: 0px;
+	text-align: center;
+	width: 100%;
+	top: 0;
+	margin: 0 auto;
+	padding-bottom: 20px;
+}
+
+#navbar a{
+	color: rgb(56,182,255);
+	text-align: center;
+	padding: 12px;
+	text-decoration: none;
+	font-size: 18px;
+	line-height: 35px;
+	border-radius: 4px;
+}
+
+#navbar a:hover{
+	color: white;
+}
+
+.hovernavbar:hover{
+	background-color: rgb(1,139,1);
+}
+
+
+/*====LOGO====*/
+
+.small_logo{
+	max-width: 100%;
+	height: auto;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	padding: 0px;
+}
+
+@media only screen and (min-width: 768px){
+	.small_logo{
+		max-width: 95%;
+		height: auto;
+	}
+}
+
+@media only screen and (max-width: 600px){
+	.small_logo{
+		max-width: 100%;
+		height: auto;
+	}	
+}
+
+/*====TOPNAVBAR====*/
+
+.topsmall_logo{
+	max-width: 100%;
+	height: auto;
+	margin: 0px;
+	padding: 0px;
+	
+}
+
+.topbg-img{
+	background-image: url("logok/logo_slim.PNG");
+	background-position: center center;
+	background-size: cover;
+}
+
+#topnav{
+	overflow: hidden;
+	background-color: rgb(0,0,0);
+	padding: 0px;
+	text-align: center;
+	width: 100%;
+	top: 0;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#topnav a{
+	margin-left: 30px;
+	margin-right: 30px;
+	color: white;
+	text-align: center;
+	padding: 12px; 
+	text-decoration: none;
+	font-size: 22px; 
+	line-height: 35px;
+	border-radius: 4px;
+}
+
+#topnav a:hover{
+	color: white;
+}
+
+.tophovernav:hover{
+	background-color: rgb(1,139,1);
+}
+
+#topnav a.active{
+	background-color: rgb(1,139,1);
+	color: white;
+}
+
+.topnav1{
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav1 a{
+	color: rgb(0,0,0);
+	text-align: center;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.topnav1 a:hover{
+	background-color: rgb(1,139,1);
+	color: white;
+}
+
+.active{
+	background-color: rgb(1,139,1);
+	color: white;
+}
+
+.topnav1 .icon{
+	display: none;
+}
+
+@media screen and (max-width: 768px){
+	.topnav1 a {display: none;}
+	.topnav1 a.icon {
+		float: right;
+		display: block;
+	}
+}
+
+@media screen and (max-width: 768px){
+	.topnav1.responsive {position: relative;}
+	.topnav1.responsive .icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	.topnav1.responsive a{
+		float: none;
+		display: block;
+		text-align: left;
+	}
+	#topnav{
+		overflow: hidden;
+		background-color: rgb(0,0,0);
+		padding: 0px;
+		text-align: center;
+		width: 100%;
+		top: 0;
+		margin: 0 auto;
+		text-align: center;
+	}
+}
+
+/*====TITLES====*/
+
+.bg-img-about{
+	background-image: url("picturesForTitles/about1.jpeg");
+	background-size: cover;
+	background-attachment: fixed;
+}
+.bg-img-our_plants{
+	background-image: url("picturesForTitles/our_plants.jpeg");
+	background-size: cover;
+	background-attachment: fixed;
+}
+.bg-img-tryme{
+	background-image: url("picturesForTitles/tryme.jpeg");
+	background-size: cover;
+	background-attachment: fixed;
+}
+.bg-img-garden_tips{
+	background-image: url("picturesForTitles/garden_tips.jpeg");
+	background-attachment: fixed;
+	background-size: cover;
+}
+.bg-img-gallery{
+	background-image: url("picturesForTitles/gallery.jpeg");
+	background-attachment: fixed;
+	background-size: cover;
+}
+.bg-img-contact_us{
+	background-image: url("picturesForTitles/contact_us.jpeg");
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+h1{
+	padding-top: 100px;
+	margin: 0px;
+	color: white;
+	font-size: 25vw;
+	z-index: 500;
+	text-align: right;
+	font-style: italic;
+	padding-right: 65px;
+}
+
+
+/*====PARAGRAPHS====*/
+
+.black{
+	background-color: black;
+}
+
+.bg-img-about2{
+	background-image: url("picturesForTexts/about.jpeg");
+	background-attachment: fixed;
+}
+
+.about{
+	padding-top:100px;
+	margin: 0px;
+	color: white;
+	font-size: 30px;
+	z-index: 500;
+	font-style: italic;
+	padding-right: 65px;
+	opacity: 1;
+}
+
+.about2{
+	padding-top: 50px;
+	margin: 0px;
+	color: white;
+	font-size: 30px;
+	z-index: 500;
+	font-style: italic;
+	padding-right: 65px;
+	opacity: 1;
+}
+
+.about3{
+	padding-top: 20px;
+	margin: 0px;
+	color: white;
+	font-size: 30px;
+	z-index: 500;
+	font-style: italic;
+	padding-right: 65px;
+	opacity: 1;
+}
+
+.about4{
+	padding-top: 20px;
+	padding-bottom: 100px;
+	margin: 0px;
+	color: white;
+	font-size: 30px;
+	z-index: 500;
+	font-style: italic;
+	padding-right: 65px;
+	opacity: 1;
+}
+
+.article_about{
+	background-color: black;
+	opacity: 0.7;
+}
+
+.bg-img-gallery2{
+	background-image: url("picturesForTexts/gallery2.jpeg");
+	background-attachment: fixed;
+}
+
+	/*====OUR PLANTS====*/
+	
+.container{
+	position: relative;
+}
+
+.container:hover .dark{
+	opacity: 0.7;
+}
+
+.dark{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right:0;
+	bottom:0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: black;
+}
+
+.flower_name{
+	color: white;
+	font-size: 40px;
+	font-style: italic;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center ;
+}
+
+@media only screen and (max-width: 378px) {
+	p.flower_name{
+		font-size: 20px;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.flower img{
+		height: 200px;
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	.flower img{
+		height: 150px;
+	}
+}
+
+@media only screen and (max-width: 930px) {
+	.flower img{
+		height: 250px;
+	}
+}
+
+@media only screen and (max-width: 770px) {
+	.flower img{
+		height: 200px;
+	}
+}
+
+@media only screen and (max-width: 680px) {
+	.flower img{
+		height: 150px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.flower img{
+		height: auto;
+	}
+}
+
+.flower{
+	text-align: center;
+}
+
+	/*====TRYME====*/
+	
+.tryme_name{
+	font-size: 60px;
+	font-style: italic;
+	color: white;
+}
+
+.green{
+	background-color: rgb(13,56,37);
+	padding: 0px;
+	margin: 0px;
+}
+
+.bg-img-tryme2{
+	background-image: url("picturesForTexts/tryme2.jpeg");
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.toTheRight{
+	text-align: right;
+}
+
+.bg-img-tryme3{
+	background-image:url("picturesForTexts/tryme3.jpeg");
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.bg-img-tryme4{
+	background-image:url("picturesForTexts/tryme4.jpeg");
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.bg-img-tryme5{
+	background-image:url("picturesForTexts/tryme5.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+
+	/*====GARDEN TIPS====*/
+
+
+.bg-img-garden_tips2{
+	background-image: url("picturesForTexts/garden_tips.jpeg");
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.expert{
+	background-color: black;
+	opacity: 0.9;
+	color: white;
+	border-radius: 8px;
+	padding: 30px;
+}
+
+.problem{
+	background-color: rgb(118,185,82);
+	opacity: 0.9;
+	border-radius: 8px;
+	padding: 20px;
+	font-size: 20px;
+	margin: 0px 0px 20% 0px;
+	text-align: justify;
+	
+}
+
+.question{
+	color: black;
+	margin: 5px 30px 10px 50px;
+	text-align: right;
+}
+
+#question{
+	text-align: center;
+	border-radius: 4px;
+	font-size: 30px;
+	margin: 40px 20% 20px 20%;
+	color: rgb(29,89,122);
+	background-color: white;
+}
+
+.expert_name{
+	font-style: italic;
+	font-size: 50px;
+}
+
+.answer{
+	font-style: italic;
+	font-size: 20px;
+	margin: 0px 20% 0px 0px;
+	text-align: justify;
+}
+
+.answer:first-letter{
+	margin: 5px 0px 10px 50px;
+}
+
+.expert_pic{
+	max-width: 100px;
+	height: auto;
+	margin-right: 20px;
+}
+
+.huge{
+	font-size: 30px;
+}
+
+.aside_QandA{
+	background-color: rgb(29,89,122);
+	opacity: 0.98;
+	border-radius: 8px;
+	padding: 20px;
+	font-size: 20px;
+	color: white;
+}
+
+.QandA{
+	font-size: 39px;
+}
+
+.subtitle{
+	font-size: 25px;
+	font-style: italic;
+	margin: 3px;
+}
+
+.thanks{
+	text-align: right;
+	margin: 0 10% 0 0;
+	color: rgb(118,185,82);
+}
+
+.thankYou{
+	text-decoration: none;
+	color: black;
+	background-color: rgb(118,185,82);
+	padding: 5px;
+	border-radius: 8px;
+	font-size: 20px;
+}
+
+.comment{
+	text-decoration: none;
+	font-size: 20px;
+	color: rgb(118,185,82);
+}
+
+.comments{
+	background-color: white;
+	padding: 5px;
+	border-radius: 8px;
+	margin-top: 20px;
+	color: black;
+}
+
+.commentName{
+	font-size: 30px;
+}
+
+.CommentMessage{
+	text-align: justify;
+}
+
+.thank{
+	font-size: 30px;
+	margin-bottom: 5%;
+}
+
+
+	/*====FORM====*/
+	
+.form{
+	background-image: url("picturesForTexts/form.jpeg");
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+label.error{
+		color: red;
+}
+
+.ask{
+	font-size: 40px;
+	width: 100%;
+}
+
+.toBeWhite{
+	color: white;
+	opacity: 0.9;
+	background-color: black;
+}
+
+.toTheCenter{
+	margin: 0% 30% 10% 20%;
+}
+
+textarea{
+	resize: none;
+}
+
+.toTheRealCenter{
+	text-align: center;
+}
+
+#bigger{
+	font-size: 30px;
+	padding: 2px 30px 2px 30px;
+	border-radius: 8px;
+}
+
+	/*====CONTACT US====*/
+	
+.bg-img-contact_us2{
+	background-image: url("picturesForTexts/contact_us.jpeg");
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.toTheCenterMod{
+	margin: 0% 0% 10% 20%;
+}
+
+.phone{
+	width: 100%;
+	height: 200px;
+}
+
+@media only screen and (min-width: 600px){
+	.tablet {height: 300px;}
+}
+
+@media only screen and (min-width: 930px){
+	.computer {height: 300px;}
+}
+
+/*====GOMBOK====*/
+	/*====SEARCH BY PLANT'S NEEDS====*/
+	
+.search{
+	width: 100%;
+	background-color: rgb(54,77,48);
+	border-color: rgb(74,106,66);
+	font-size: 20px;
+	height: 50px;
+	color: rgb(201,218,197);
+}
+
+.search_buttons{
+	display: none;
+}
+
+#search_buttons{
+	background-image: url("picturesForTexts/search.jpeg");
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.search_labels{
+	background-color: rgb(54,77,48);
+	color: rgb(201,218,197);
+	font-size: 25px;
+	margin: 10px;
+	border-radius: 4px;
+	padding: 10px;
+}
+
+label{
+	padding: 10px;
+}
+
+.switch-toggle{
+  width: 100%;
+}
+
+.switch-toggle label:not(.disabled){
+  cursor: pointer;
+}
+
+#ok{
+	margin: 0 auto;
+	text-align: center;
+}
+
+#okButton{
+	background-color: rgb(127,204,123);
+	color: rgb(45,48,53);
+	border-color: rgb(169,221,166);
+	font-size: 25px;
+	border-radius: 6px;
+	padding: 0px 40px 0px 40px;
+	margin: 20px;
+}
+
+	/*====CATEGORIES====*/
+	
+.categories{
+	width: 100%;
+	background-color: rgb(54,77,48);
+	border-color: rgb(74,106,66);
+	font-size: 20px;
+	height: 50px;
+	color: rgb(201,218,197);
+}
+.categories_buttons{
+	display: none;
+}
+#categories_buttons{
+	background-image: url("picturesForTexts/categories.jpeg");
+	background-attachment: fixed;
+	background-size: cover;
+}
+.categories_labels{
+	background-color: rgb(54,77,48);
+	color: rgb(201,218,197);
+	font-size: 25px;
+	border-radius: 4px;
+	padding: 10px;
+	width: 100%;
+	border: none;
+}
+
+	/*====PLANTS====*/
+	
+#plants{
+	background-color: black;
+}
+
+.plant_buttons{
+	max-width: 100%;
+	height: auto;
+}
+
+.overlay{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a{
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus{
+    color: #f1f1f1;
+}
+
+.overlay .closebtn{
+    position: absolute;
+	top: -10px;
+    right: 45px;
+    font-size: 50px;
+}
+
+@media screen and (max-height: 450px){
+  .overlay a{font-size: 20px}
+  .overlay .closebtn{
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+hr{
+	width: 80%;
+}
+
+.plant_name{
+	color: white;
+	font-size: 60px;
+}
+.info_plant{
+	color: pink;
+	margin: 10%;
+	text-align: justify;
+}
+
+.data{
+	color: rgb(255,164,180);
+	margin: 30px 80px 30px 80px;
+	line-height: 30px;
+}
+
+.needs{
+	color: rgb(255,136,157);
+	margin: 30px 80px 30px 80px;
+	line-height: 30px;
+}
+
+
+/*====FOOTER====*/
+
+
+.fa:hover{
+    opacity: 0.7;
+}
+
+.fa-facebook{
+	background: #3B5998;
+	color: white;
+	padding: 20px;
+	font-size: 30px;
+	width: 50px;
+	text-align: center;
+	text-decoration: none;
+	margin: 20px 20px;
+}
+
+.fa-twitter{
+	background: #55ACEE;
+	color: white;
+	padding: 20px;
+	font-size: 30px;
+	width: 50px;
+	text-align: center;
+	text-decoration: none;
+	margin: 20px 20px;
+}
+
+.fa-instagram {
+	background: #125688;
+	color: white;
+	padding: 20px;
+	font-size: 30px;
+	width: 50px;
+	text-align: center;
+	text-decoration: none;
+	margin: 20px 20px;
+}
+
+#negyzet_logo{
+	max-height: 57px;
+	width: auto;
+	margin: -22px 20px;
+}
+
+footer{
+	margin: 0px;
+	text-align: center;
+}
+
+.white{
+	color: white;
+}
+
+/*====RESPONSIVENESS====*/
+
+[class*="col-"]{ /*mobile first*/
+    float: left;
+    padding: 15px;
+    width: 100%;
+}
+
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+@media only screen and (min-width: 600px){
+    /* tablet */
+	h1{
+		font-size: 10vw;
+	}
+	
+	.info_plant{
+		margin: 5% 10% 5% 10%;
+	}
+	
+	.comments{
+		margin: 20px 0 0 50%;
+	}
+	
+    .col-t-1 {width: 8.33%;}
+    .col-t-2 {width: 16.66%;}
+    .col-t-3 {width: 25%;}
+    .col-t-4 {width: 33.33%;}
+    .col-t-5 {width: 41.66%;}
+    .col-t-6 {width: 50%;}
+    .col-t-7 {width: 58.33%;}
+    .col-t-8 {width: 66.66%;}
+    .col-t-9 {width: 75%;}
+    .col-t-10 {width: 83.33%;}
+    .col-t-11 {width: 91.66%;}
+    .col-t-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 930px) {
+    /* számítógép */
+	.info_plant{
+		margin: 3% 10% 3% 10%;
+	}
+	
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
